@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # 必要なモジュールの読み込み
-from flask import Flask, jsonify, abort, make_response
+from flask import Flask, jsonify,make_response
 
 # Flaskクラスのインスタンスを作成
 # __name__は現在のファイルのモジュール名
@@ -20,5 +20,4 @@ def not_found(error):
 # ファイルをスクリプトとして実行した際に
 # ホスト0.0.0.0, ポート3001番でサーバーを起動
 if __name__ == '__main__':
-    api.run(0.0.0.0)
-s
+	api.run()
