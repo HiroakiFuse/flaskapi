@@ -17,7 +17,6 @@ def get():
 def not_found(error):
     return make_response(jsonify({'error': 'Not found'}), 404)
 
-# ファイルをスクリプトとして実行した際に
-# ホスト0.0.0.0, ポート3001番でサーバーを起動
+#appを起動
 if __name__ == '__main__':
 	app.run()
